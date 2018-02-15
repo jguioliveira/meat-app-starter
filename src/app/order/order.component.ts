@@ -15,6 +15,8 @@ export class OrderComponent implements OnInit {
     { label: "Cartão Refeição", value: "REF" }
   ];
 
+  delivery: number = 8;
+
   constructor(private orderService: OrderService) { }
 
   ngOnInit() {
@@ -22,6 +24,10 @@ export class OrderComponent implements OnInit {
 
   cartItens(): CartItem[] {
     return this.orderService.cartItens();
+  }
+
+  itemsValue(){
+    return this.orderService.itemsValue();
   }
 
   increaseQty(item: CartItem) {

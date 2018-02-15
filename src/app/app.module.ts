@@ -24,6 +24,7 @@ import { InputContainerComponent } from './shared/input-container/input-containe
 import { OptionComponent } from './shared/option/option.component';
 import { OrderItemsComponent } from './order/order-items/order-items.component';
 import { OrderService } from './order/order.service';
+import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { OrderService } from './order/order.service';
     OrderComponent,
     InputContainerComponent,
     OptionComponent,
-    OrderItemsComponent
+    OrderItemsComponent,
+    DeliveryCostsComponent
   ],
   imports: [
     BrowserModule,
