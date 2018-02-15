@@ -35,12 +35,8 @@ import { InputContainerComponent } from './shared/input-container/input-containe
     ShoppingCartComponent,
     MenuItemComponent,
     ReviewsComponent,
-<<<<<<< HEAD
-    OrderComponent
-=======
     OrderComponent,
     InputContainerComponent
->>>>>>> a96934fc8a3225dfbd1ed864e8de303556d57299
   ],
   imports: [
     BrowserModule,
