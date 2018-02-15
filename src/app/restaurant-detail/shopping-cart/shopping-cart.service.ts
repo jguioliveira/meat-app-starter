@@ -1,6 +1,5 @@
 import { CartItem } from "../../restaurant-detail/shopping-cart/cart-item.model";
 import { MenuItem } from "../../restaurant-detail/menu-item/menu-item.model";
-import { validateConfig } from "@angular/router/src/config";
 
 export class ShoppingCartService {
 
@@ -23,10 +22,21 @@ export class ShoppingCartService {
     addItem(item: MenuItem) {
         let foundItem = this.itens.find((fItem) => fItem.menuItem === item);
         if (foundItem) {
-            foundItem.quantity = foundItem.quantity + 1;
+            this.increaseQty(foundItem);
         }
         else {
             this.itens.push(new CartItem(item));
+        }
+    }
+
+    increaseQty(item: CartItem){
+        item.quantity = item.quantity + 1;
+    }
+
+    decreaseQty(item: CartItem){
+        item.quantity = item.quantity - 1;
+        if(item.quantity === 0){
+            this.removeItem(item);
         }
     }
 

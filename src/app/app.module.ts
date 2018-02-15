@@ -22,6 +22,8 @@ import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-
 import { OrderComponent } from './order/order.component';
 import { InputContainerComponent } from './shared/input-container/input-container.component';
 import { OptionComponent } from './shared/option/option.component';
+import { OrderItemsComponent } from './order/order-items/order-items.component';
+import { OrderService } from './order/order.service';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import { OptionComponent } from './shared/option/option.component';
     ReviewsComponent,
     OrderComponent,
     InputContainerComponent,
-    OptionComponent
+    OptionComponent,
+    OrderItemsComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,7 @@ import { OptionComponent } from './shared/option/option.component';
     FormsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [RestaurantsService, ShoppingCartService, { provide: LOCALE_ID, useValue: 'pt-BR' }],
+  providers: [RestaurantsService, ShoppingCartService, OrderService, { provide: LOCALE_ID, useValue: 'pt-BR' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
