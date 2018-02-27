@@ -370,5 +370,44 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "address": "Rua Amelia",
+      "number": "130",
+      "optionalAddress": "Casa",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 2,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantity": 2,
+          "menuId": "donut"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "address": "Rua amélia",
+      "number": "130",
+      "optionalAddress": "casa",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "capp"
+        },
+        {
+          "quantity": 1,
+          "menuId": "espreso"
+        },
+        {
+          "quantity": 1,
+          "menuId": "starb"
+        }
+      ],
+      "id": 2
+    }
+  ]
 }
