@@ -1,10 +1,10 @@
 import { Injectable } from "@angular/core";
 import { Http, Headers, RequestOptions } from "@angular/http"
 import { Observable } from "rxjs/Observable"
-import { ShoppingCartService } from "../restaurant-detail/shopping-cart/shopping-cart.service";
-import { CartItem } from "../restaurant-detail/shopping-cart/cart-item.model";
-import { Order } from "../order/order.model";
-import { MEAT_API } from "../app.api";
+import { ShoppingCartService } from "./shopping-cart.service";
+import { CartItem } from "../../restaurant-detail/shopping-cart/cart-item.model";
+import { Order } from "../../order/order.model";
+import { MEAT_API } from "../../app.api";
 
 @Injectable()
 export class OrderService {

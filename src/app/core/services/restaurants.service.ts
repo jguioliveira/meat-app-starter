@@ -4,10 +4,10 @@ import { Observable } from "rxjs/Observable";
 import "rxjs/add/operator/map";
 import "rxjs/add/operator/catch";
 
-import { Restaurant } from "./restaurant/restaurant.model";
-import { MenuItem } from "../restaurant-detail/menu-item/menu-item.model";
-import { MEAT_API } from "../app.api";
 import { ErrorHandler } from "app/app.error-handler";
+import { Restaurant } from "../../restaurants/restaurant/restaurant.model";
+import { MEAT_API } from "../../app.api";
+import { MenuItem } from "../../restaurant-detail/menu-item/menu-item.model";
 
 
 @Injectable()
