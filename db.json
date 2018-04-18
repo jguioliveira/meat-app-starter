@@ -494,6 +494,30 @@
         }
       ],
       "id": 6
+    },
+    {
+      "name": "João Carlos",
+      "email": "joao@gmail.com",
+      "emailConfirmation": "joao@gmail.com",
+      "address": "Rua Leila",
+      "number": "250",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantity": 1,
+          "menuId": "donut"
+        },
+        {
+          "quantity": 1,
+          "menuId": "bread"
+        }
+      ],
+      "id": 7
     }
   ]
 }
